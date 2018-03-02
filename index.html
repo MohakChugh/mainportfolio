@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/paralax-header-1.css">
+    <link rel="stylesheet" href="assets/css/paralax-header.css">
+    <link rel="stylesheet" href="assets/css/paralax-header1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style type="text/css" media="screen">
+        #maindiv{}
+    </style>
+</head>
+
+<body>
+    <div id="maindiv" style="width:100%;background-image:url(&quot;assets/img/dark.jpg&quot;);">
+        <div class="container" id="cover" style="width:100%;/*background-image:url(&quot;assets/img/desktopwallpaper.jpg&quot;);*/background-attachment:fixed;">
+            <h1 data-aos="fade-up" data-aos-duration="500" id="main-heading" style="font-family:Acme, sans-serif;margin:16px;">Mohak Chugh</h1><html>
+   <h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "I Work as a Front-End Web Developer","I create Landing Pages","I Create Portfolios","I Create Websites" ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+</html>
+<style>
+    body {
+  text-align: center;
+  
+}
+
+* { color:rgba(255,255,255,0.6); text-decoration: none;}
+</style>
+<script>
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade" data-aos-duration="500">
+                    <p style="color:rgba(255,255,255,0.5);">Front-End Web Developer</p>
+                </div>
+                <div class="col-md-4">
+                    <p data-aos="fade" data-aos-duration="500" style="color:rgba(255,255,255,0.5);">College Student</p>
+                </div>
+                <div class="col-md-4">
+                    <p data-aos="fade" data-aos-duration="500" style="color:rgba(255,255,255,0.5);">Self Taught</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:31px;">
+        <div class="container" id="expertise">
+            <h1 id="headingexpertise" style="color:rgba(33,37,41,0.58);">My Expertise</h1>
+            <p style="color:rgba(33,37,41,0.58);">Things I Make Happen</p>
+            <div class="row" data-aos="fade-up" data-aos-duration="600">
+                <div class="col-md-4"><i class="fa fa-diamond icon" style="color:rgba(0,209,255,0.9);font-size:2.8125em;"></i>
+                    <h2 style="color:rgba(33,37,41,0.58);">Ideas</h2>
+                    <div class="clearfix"></div>
+                    <p style="color:rgba(33,37,41,0.58);">I create Ideas for Websites and Web Apps and build Prototypes</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4"><i class="fa fa-magic icon" style="color:rgba(0,209,255,0.9);font-size:2.8125em;"></i>
+                    <h2 style="color:rgba(33,37,41,0.58);">Design</h2>
+                    <div class="clearfix"></div>
+                    <p style="color:rgba(33,37,41,0.58);">I Design Websites, Create Mockups and Wireframes for Reference</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4"><i class="fa fa-code icon" style="color:rgba(0,209,255,0.9);font-size:2.8125em;"></i>
+                    <h2 style="color:rgba(33,37,41,0.58);">Code</h2>
+                    <div class="clearfix"></div>
+                    <p style="color:rgba(33,37,41,0.58);">This is where the magic happens. I write the code to Match the Design.</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div style="margin-top:36px;">
+        <div class="container" id="expertise">
+            <h1 data-aos="fade" data-aos-duration="400" id="headingexpertise" style="color:rgba(33,37,41,0.58);">My Skill Set</h1>
+            <p data-aos="fade-up" data-aos-duration="500" style="color:rgba(33,37,41,0.58);">The Skills Which Create Magic</p>
+            <div class="row" data-aos="fade" data-aos-duration="400">
+                <div class="col-md-3 ">
+                    <h1 style="color:rgba(0,209,255,0.9);">Html</h1>
+                </div>
+                <div class="col-md-3 ">
+                    <h1 style="color:rgba(0,209,255,0.9);">Css</h1>
+                </div>
+                <div class="col-md-3 ">
+                    <h1 style="color:rgba(0,209,255,0.9);">JavaScript</h1>
+                </div>
+                <div class="col-md-3 ">
+                    <h1 style="color:rgba(0,209,255,0.9);">Jquery</h1>
+                </div>
+                <div class="col-md-3 ">
+                    <h1 style="color:rgba(0,209,255,0.9);">Bootstrap</h1>
+                </div>
+                <div class="col-md-3 ">
+                    <h1 style="color:rgba(0,209,255,0.9);">Php</h1>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div style="color:#000000;background-color:#fed766;">
+        <div class="container">
+            <h1 data-aos="fade" data-aos-duration="500" id="workwithme" style="color:rgba(5,5,5,0.81);font-size:62px;margin-top:1em;font-family:'Abril Fatface', cursive;">Work With ME</h1>
+            <p id="workparagraph" style="margin-top:22px;font-size:22px;color:rgba(0,0,0,0.68);">I am Currently Accepting Projects and I look Forward to Working wIth You.</p>
+            <p id="workpara2" style="color:rgba(0,0,0,0.61);">You Can Directly Contact Me Via Email</p>
+            <div class="row">
+                <div class="col" id="colom"><button class="btn btn-primary" type="button" data-bs-hover-animate="tada" id="emailmebutton" style="background-color:#252A30;color:rgb(254,215,102);">Email Me</button></div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#252A30;width:100%;">
+        <p id="madebyme" style="color:rgba(255,255,255,0.45);padding-top:5em;">Created By Me With Love</p>
+        <div class="container">
+            <div class="row">
+                <div class="col fcon" data-aos="flip-up" data-aos-duration="600" id="footericons"><i class="fa fa-envelope-o" style="margin-right:14px;margin-left:14px;color:rgba(255,255,255,0.51);"></i><i class="fa fa-linkedin-square" style="margin-right:14px;margin-left:14px;color:rgba(255,255,255,0.54);"></i><i class="fa fa-github"
+                        style="margin-right:14px;margin-left:14px;color:rgba(255,255,255,0.5);"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+
+</html>

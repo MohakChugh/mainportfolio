@@ -1,0 +1,140 @@
+#maindiv {
+  align-content:center;
+  align-items:center;
+  align-self:center;
+  background-attachment:fixed;
+}
+
+#main-heading {
+  text-align:center;
+  font-size:3rem;
+  color:rgba(255,255,255,0.63);
+  /*padding:2em;*/
+}
+
+#textfortheheading {
+  text-align:center;
+  color:rgba(255,255,255,0.69);
+  padding:2em;
+  /*margin-bottom:1em;*/
+  padding-bottom:4em;
+}
+
+div {
+  padding:1em;
+}
+
+#Find-more {
+  align-self:center;
+  align-content:center;
+  align-items:center;
+}
+
+#cover {
+  align-content:center;
+  align-items:center;
+  text-align:center;
+  align-self:center;
+}
+
+#maindiv {
+  align-content:center;
+  align-items:center;
+  align-self:center;
+  background-attachment:fixed;
+}
+
+#main-heading {
+  text-align:center;
+  font-size:5rem;
+  color:rgba(255,255,255,0.63);
+  padding:0;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+#textfortheheading {
+  text-align:center;
+  color:rgba(255,255,255,0.69);
+  padding:2em;
+  font-size:2em;
+  /*margin-bottom:1em;*/
+  padding-bottom:4em;
+}
+
+div {
+  padding:1em;
+}
+
+#Find-more {
+  align-self:center;
+  align-content:center;
+  align-items:center;
+}
+
+#cover {
+  align-content:center;
+  align-items:center;
+  text-align:center;
+  align-self:center;
+}
+
+#expertise {
+  text-align:center;
+}
+
+.icon {
+  /*width:3em;*/
+  /*height:3em;*/
+}
+
+#workwithme {
+  text-align:center;
+}
+
+#workparagraph {
+  text-align:center;
+}
+
+#workpara2 {
+  text-align:center;
+}
+
+#colom {
+  text-align:center;
+}
+
+#emailmebutton {
+  padding-left:4em;
+  padding-right:4em;
+  border-radius:20px;
+}
+
+#madebyme {
+  text-align:center;
+}
+
+#footericons {
+  text-align:center;
+}
+
+.fcon {
+  font-size:45px;
+}
+
+#mohakchugh {
+  text-align:center;
+}
+
+#paramohak {
+  text-align:center;
+}
+
+#maintop {
+  text-align:center;
+}
+
+#typewriterrow {
+  text-align:center;
+}
+
